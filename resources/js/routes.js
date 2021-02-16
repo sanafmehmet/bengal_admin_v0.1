@@ -29,6 +29,10 @@ import Service from './components/home/services/index.vue'
 import EditService from './components/home/services/edit.vue'
 import ViewService from './components/home/services/view.vue'
 
+// Load Investor Relation files
+import StoreInvestor from './components/investor/create.vue'
+import Investor from './components/investor/index.vue'
+
 // Load Footer files
 import StoreFooterContent from './components/footer/footer_content/create.vue'
 import FooterContent from './components/footer/footer_content/index.vue'
@@ -68,6 +72,10 @@ export const routes = [
     { path: '/service', component:Service, name: 'service'},
     { path: '/edit-service/:id', component:EditService, name: 'edit-service'},
     { path: '/view-service/:id', component:ViewService, name: 'view-service'},
+
+    // Register Investor routes
+    { path: '/store-investor', component:StoreInvestor, name: 'store-investor'},
+    { path: '/investor', component:Investor, name: 'investor'},
 
     // Register Footer routes
     { path: '/store-footercontent', component:StoreFooterContent, name: 'store-footercontent'},

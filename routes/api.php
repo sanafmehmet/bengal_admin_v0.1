@@ -10,6 +10,7 @@ use App\Http\Controllers\Api\ServiceController;
 use App\Http\Controllers\Api\FooterController;
 use App\Http\Controllers\Api\MenuController;
 use App\Http\Controllers\Api\HomeController;
+use App\Http\Controllers\Api\InvestorController;
 
 
 Route::group([
@@ -45,10 +46,13 @@ Route::apiResource('home', HomeController::class);
 // About us Area
 Route::apiResource('aboutus', AboutUsController::class);
 
+// Investor Area
+Route::apiResource('investor', InvestorController::class);
+
 // Tab Area
 Route::apiResource('tab', TabController::class);
 
-// Tab Area
+// Service Area
 Route::apiResource('service', ServiceController::class);
 
 // Footer Area

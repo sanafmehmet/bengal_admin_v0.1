@@ -31,6 +31,9 @@
                             <li class="sidebar-item">
                                 <router-link to="/menu" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Menu & Images</span></router-link>
                             </li>
+                             <li class="sidebar-item">
+                                <router-link to="/investor" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Investor Relation</span></router-link>
+                            </li>
                             <!-- <li class="sidebar-item">
                                 <router-link to="/footerimage" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Footer Image</span></router-link>
                             </li> -->
@@ -45,6 +48,7 @@
                             <li class="sidebar-item">
                                 <router-link to="/document" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Document</span></router-link>
                             </li>
+                           
                             <li class="sidebar-item">
                                 <router-link to="/tab" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Tabs</span></router-link>
                             </li>
