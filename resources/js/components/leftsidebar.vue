@@ -31,7 +31,10 @@
                             <li class="sidebar-item">
                                 <router-link to="/menu" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Menu & Images</span></router-link>
                             </li>
-                             <li class="sidebar-item">
+                            <li class="sidebar-item">
+                                <router-link to="/achievement" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Achievement</span></router-link>
+                            </li>
+                            <li class="sidebar-item">
                                 <router-link to="/investor" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Investor Relation</span></router-link>
                             </li>
                             <!-- <li class="sidebar-item">
@@ -44,6 +47,15 @@
                         <ul aria-expanded="false" class="collapse  first-level">
                             <li class="sidebar-item">
                                 <router-link to="/aboutus" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">About Us</span></router-link>
+                            </li>
+                            <li class="sidebar-item">
+                                <router-link to="/counter" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Counter</span></router-link>
+                            </li>
+                            <li class="sidebar-item">
+                                <router-link to="/profit" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Profit Share</span></router-link>
+                            </li>
+                            <li class="sidebar-item">
+                                <router-link to="/export" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Export Markets</span></router-link>
                             </li>
                             <li class="sidebar-item">
                                 <router-link to="/document" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Document</span></router-link>

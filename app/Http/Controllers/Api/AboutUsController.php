@@ -20,6 +20,13 @@ class AboutUsController extends Controller
         return response()->json($abs);
     }
 
+    public function GetAboutus(Request $request)
+    {
+        $abs = DB::table('abouts')->where('lang', $request->tab_name)->first();
+
+        return response()->json($abs);
+    }
+
     // For Frontend
     public function GetDocuments(Request $request){
         $docs = DB::table('aboutus_documents')

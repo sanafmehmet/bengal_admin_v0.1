@@ -17,6 +17,22 @@ import AboutUs from './components/home/aboutUs/index.vue'
 import EditAboutUs from './components/home/aboutUs/edit.vue'
 import ViewAboutUs from './components/home/aboutUs/view.vue'
 
+// Load About Us files
+import StoreAchievement from './components/achievement/create.vue'
+import Achievement from './components/achievement/index.vue'
+
+// Load Counter files
+import StoreCounter from './components/home/counter/create.vue'
+import Counter from './components/home/counter/index.vue'
+
+// Load Profit Sharing files
+import StoreProfit from './components/home/profit_sharing/create.vue'
+import Profit from './components/home/profit_sharing/index.vue'
+
+// Load Export Markets files
+import StoreExport from './components/home/export_markets/create.vue'
+import Export from './components/home/export_markets/index.vue'
+
 // Load Tab files
 import StoreTab from './components/home/tabs/create.vue'
 import Tab from './components/home/tabs/index.vue'
@@ -60,6 +76,22 @@ export const routes = [
     { path: '/aboutus', component:AboutUs, name: 'aboutus'},
     { path: '/edit-aboutus/:id', component:EditAboutUs, name: 'edit-aboutus'},
     { path: '/view-aboutus/:id', component:ViewAboutUs, name: 'view-aboutus'},
+
+    // Register Counter routes
+    { path: '/store-counter', component:StoreCounter, name: 'store-counter'},
+    { path: '/counter', component:Counter, name: 'counter'},
+
+    // Register Profit Sharing routes
+    { path: '/store-profit', component:StoreProfit, name: 'store-profit'},
+    { path: '/profit', component:Profit, name: 'profit'},
+
+    // Register Profit Sharing routes
+    { path: '/store-profit', component:StoreProfit, name: 'store-profit'},
+    { path: '/profit', component:Profit, name: 'profit'},
+
+    // Register Export Markets routes
+    { path: '/store-export', component:StoreExport, name: 'store-export'},
+    { path: '/export', component:Export, name: 'export'},
 
     // Register Tab routes
     { path: '/store-tab', component:StoreTab, name: 'store-tab'},
