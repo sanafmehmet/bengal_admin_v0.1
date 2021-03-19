@@ -9,6 +9,10 @@
                     <li class="sidebar-item">
                         <router-link to="/home" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></router-link>
                     </li>
+
+                    <li class="sidebar-item">
+                        <router-link to="/bred" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Bredcrumbs</span></router-link>
+                    </li>
                     <!-- 
                     <li class="sidebar-item">
                         <router-link to="/product" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Product</span></router-link>
@@ -35,12 +39,23 @@
                                 <router-link to="/achievement" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Achievement</span></router-link>
                             </li>
                             <li class="sidebar-item">
+                                <router-link to="/commitment" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Commitment</span></router-link>
+                            </li>
+                            <li class="sidebar-item">
+                                <router-link to="/career" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Career</span></router-link>
+                            </li>
+                            <li class="sidebar-item">
+                                <router-link to="/news" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">News & Events</span></router-link>
+                            </li>
+                            <li class="sidebar-item">
                                 <router-link to="/investor" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Investor Relation</span></router-link>
                             </li>
-                            <!-- <li class="sidebar-item">
-                                <router-link to="/footerimage" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Footer Image</span></router-link>
-                            </li> -->
-                           
+                            <li class="sidebar-item">
+                                <router-link to="/machievement" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Menu Achievement</span></router-link>
+                            </li>
+                            <li class="sidebar-item">
+                                <router-link to="/contactus" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Contact Us</span></router-link>
+                            </li>
                         </ul>
                     </li>
                     <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Home </span></a>
@@ -55,6 +70,9 @@
                                 <router-link to="/profit" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Profit Share</span></router-link>
                             </li>
                             <li class="sidebar-item">
+                                <router-link to="/partner" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Partner</span></router-link>
+                            </li>
+                            <li class="sidebar-item">
                                 <router-link to="/export" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Export Markets</span></router-link>
                             </li>
                             <li class="sidebar-item">
@@ -66,6 +84,53 @@
                             </li>
                             <li class="sidebar-item">
                                 <router-link to="/service" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Services</span></router-link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">About Us </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item">
+                                <router-link to="/aboutus-one" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Content One</span></router-link>
+                            </li>
+                            <!-- <li class="sidebar-item">
+                                <router-link to="/footerimage" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Footer Image</span></router-link>
+                            </li> -->
+                           
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Settings </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item">
+                                <router-link to="/category" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Category</span></router-link>
+                            </li>
+                            <!-- <li class="sidebar-item">
+                                <router-link to="/footerimage" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Footer Image</span></router-link>
+                            </li> -->
+                           
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Category </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item">
+                                <router-link to="/food" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Food Processing</span></router-link>
+                            </li>
+                             <li class="sidebar-item">
+                                <router-link to="/plastic" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Plastic & Melamine</span></router-link>
+                            </li>
+                             <li class="sidebar-item">
+                                <router-link to="/textile" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Textile & Apparels</span></router-link>
+                            </li>
+                             <li class="sidebar-item">
+                                <router-link to="/hospitality" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Hospitality Service</span></router-link>
+                            </li>
+                             <li class="sidebar-item">
+                                <router-link to="/infrustructure" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Infrustructure</span></router-link>
+                            </li>
+                             <li class="sidebar-item">
+                                <router-link to="/realestate" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Real Estate</span></router-link>
+                            </li>
+                             <li class="sidebar-item">
+                                <router-link to="/media" class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Media & Entertainment</span></router-link>
                             </li>
                         </ul>
                     </li>

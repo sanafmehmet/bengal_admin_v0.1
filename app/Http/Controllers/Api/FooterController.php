@@ -21,7 +21,28 @@ class FooterController extends Controller
         return response()->json($contents);
     }
 
+    public function GetFooter(Request $request)
+    {
+       if($request->lang){
+        $footer = DB::table('footer_contents')->where('lang', $request->lang)->first();
 
+        $f_images = DB::table('footer_images')->get();
+
+        return response()->json([
+            'content' => $footer,
+            'images' => $f_images
+        ]);
+       }else{
+        $footer = DB::table('footer_contents')->where('lang', 'English')->first();
+
+        $f_images = DB::table('footer_images')->get();
+
+        return response()->json([
+            'content' => $footer,
+            'images' => $f_images
+        ]);
+       }
+    }
     /**
      * Store a newly created resource in storage.
      *

@@ -22,19 +22,53 @@ class AboutUsController extends Controller
 
     public function GetAboutus(Request $request)
     {
-        $abs = DB::table('abouts')->where('lang', $request->tab_name)->first();
+       if($request->tab_name){
+            $abs = DB::table('abouts')->where('lang', $request->tab_name)->first();
 
-        return response()->json($abs);
+            return response()->json($abs);
+       }else{
+            $abs = DB::table('abouts')->where('lang','English')->first();
+
+            return response()->json($abs);
+       }
     }
 
     // For Frontend
     public function GetDocuments(Request $request){
-        $docs = DB::table('aboutus_documents')
-            ->where('lang', $request->lang)
-            //->get();
-            ->paginate(2);
+        if($request->lang){
+            $docs = DB::table('aboutus_documents')
+                ->where('lang', $request->lang)
+                //->get();
+                ->paginate(3);
 
-        return response()->json($docs);
+            return response()->json($docs);
+        }else{
+            $docs = DB::table('aboutus_documents')
+                ->where('lang', 'English')
+                //->get();
+                ->paginate(3);
+
+            return response()->json($docs);
+        }
+    }
+
+    // About us content one
+    public function GetAboutusOne(Request $request){
+        if($request->lang){
+            $docs = DB::table('aboutus_ones')
+            ->where('lang', $request->lang)
+            ->first();
+
+            return response()->json( $docs);
+
+        }else{
+            $docs = DB::table('aboutus_ones')
+            ->where('lang', 'English')
+            ->first();
+
+            return response()->json( $docs);
+        }
+       
     }
 
 
@@ -56,6 +90,26 @@ class AboutUsController extends Controller
         $data['view_profile'] = $request->view_profile;
 
         DB::table('abouts')->insert($data);
+
+        return response()->json($data);
+    }
+
+    public function AboutusOne(Request $request)
+    {
+        $data = array();
+        $data['userId'] = $request->userId;
+        $data['lang'] = $request->lang;
+        $data['heading'] = $request->heading;
+        $data['title'] = $request->title;
+        $data['desc'] = $request->desc;
+        $data['title_one'] = $request->title_one;
+        $data['desc_one'] = $request->desc_one;
+        $data['title_two'] = $request->title_two;
+        $data['desc_two'] = $request->desc_two;
+        $data['title_three'] = $request->title_three;
+        $data['desc_three'] = $request->desc_three;
+
+        DB::table('aboutus_ones')->insert($data);
 
         return response()->json($data);
     }
